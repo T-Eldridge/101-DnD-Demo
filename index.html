@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,16 @@
   <script src="main.js" defer></script>
   <title>101 DnD Demo</title>
 </head>
+
 <body>
   <!-- TODO 1 -->
   <!-- Use one the of the DnD event listener attributes to trigger a function that will change the background once a draggable element leaves a dropzone. -->
+
   <!-- TODO 2 - SEE main.js -->
-  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" >
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="removeDrop(event)">
     <i class="fas fa-peace fa-5x peace" draggable="true" ondragstart="drag(event)" id="drag1"></i>
   </div>
-  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="removeDrop(event)"></div>
   <!-- TODO 3 -->
   <!-- Use another DnD event to change the border of the targeted dropzone when a draggable element enter it. -->
   <!-- TODO 4 -->
@@ -24,4 +27,5 @@
   <!-- TODO 5 -->
   <!-- Use Font Awesome to create 3 more draggable elements -->
 </body>
+
 </html>

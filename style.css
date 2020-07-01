@@ -1,4 +1,5 @@
-#div1, #div2 {
+#div1,
+#div2 {
   float: left;
   width: 300px;
   height: 105px;
@@ -16,5 +17,10 @@
 }
 
 .hovering {
-  background: rgba(0, 151, 19, 0.3); 
+  background: rgba(0, 151, 19, 0.3);
+}
+
+
+.no-hover {
+  background: hotpink;
 }
